@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.pageContainer {
+  margin: 0px 3rem;
+}

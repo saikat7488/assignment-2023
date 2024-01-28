@@ -1,0 +1,256 @@
+:root {
+  font-size: 16px;
+}
+
+.courseCard{
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom : 30px;
+  background : #f8f8f8;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.courseCard:last-child {
+  margin-bottom: 0px;
+}
+
+/* courseStatus */
+.courseStatus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 06px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: white;
+}
+
+/* courseTitle */
+.courseTitle {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.3rem 06px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  background: white;
+}
+
+/* ******************************* */
+/* ******** COURSE SECTION ******* */
+/* ******************************* */
+
+.courseSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.courseInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: white;
+}
+
+.courseContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 04px;
+  margin-top: 10px;
+}
+
+.classContentItem {
+  flex-grow: 1;
+  padding: 06px 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+.studentWithCourseTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 04px;
+  margin-top: 10px;
+}
+.studentWithCourseTime > div {
+  flex-grow: 1;
+  padding: 06px 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+/* ******************************* */
+/* ******** TEACHER SECTION ****** */
+/* ******************************* */
+
+.teacherSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.teacherInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: white;
+}
+
+.courseInstructorDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.2rem 0rem;
+  margin-top: 10px;
+}
+
+.courseInstructorImage {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+.courseInstructorImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+.courseInstructorImage img:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+.courseInstructorName {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 06px 2rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ******************************* */
+/* ******** STUDENT SECTION ****** */
+/* ******************************* */
+
+.studentSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.studentInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: white;
+}
+
+.examination {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.result {
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px;
+  border-radius: 4px;
+  background: white;
+}
+.resultTitle {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.resultData {
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.completeResult {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  background: white;
+}
+
+.resultStatus {
+  margin-top: 10px;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  background: white;
+}
+
+/* Content Hover */
+/* .courseCard:hover .courseStatus,
+.courseCard:hover .courseTitle,
+.courseCard:hover .courseInfo,
+.courseCard:hover .classContentItem,
+.courseCard:hover .studentWithCourseTime > div,
+.courseCard:hover .teacherInfo,
+.courseCard:hover .studentInfo,
+.courseCard:hover .result,
+.courseCard:hover .completeResult,
+.courseCard:hover .resultStatus,
+.courseCard:hover .courseInstructorName {
+  background: rgb(66, 176, 166);
+  color: white;
+} */

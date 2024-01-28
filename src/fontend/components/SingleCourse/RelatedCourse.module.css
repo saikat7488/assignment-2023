@@ -1,0 +1,47 @@
+/*******************************************/
+/************RELATED COURSES****************/
+/*******************************************/
+
+.relatedCoursesContainer {
+  flex-grow: 1;
+  width: 46%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 50px;
+  padding: 3.5rem 1rem;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px 0px rgba(70, 66, 66, 0.5);
+}
+
+@media screen and (max-width: 991px) {
+  .relatedCoursesContainer {
+    width: 100% ;
+    min-height: auto;
+  }
+}
+
+.relatedCoursesContainer::after {
+  position: absolute;
+  content: "RELATED COURSE";
+  top: -25px;
+  left: 50%;
+  padding: 0px 2rem;
+  height: 50px;
+  display: flex;
+  font-weight: bold;
+  background: white;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  text-align: center;
+}

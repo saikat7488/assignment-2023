@@ -1,0 +1,211 @@
+:root {
+  font-size: 16px;
+  --whiteColor--: #ffffff;
+  --blackColor--: #000000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.customContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+.swatch {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  min-height: 550px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.swatch div {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 9rem;
+  height: 500px;
+  padding: 20px 0px;
+  border-radius: 5px;
+  transform: translateX(-50%) rotate(0deg);
+
+  cursor: pointer;
+  transform-origin: center 90%;
+  backface-visibility: hidden;
+
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.479);
+  background: var(--whiteColor--);
+}
+.swatch div:hover {
+  background: rgb(30, 178, 166);
+  color: white;
+  transition: all 0.4s;
+}
+
+.swatch div span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  transform-origin: center center;
+  white-space: nowrap;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
+
+.swatch div:before {
+  position: absolute;
+  content: "";
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  background : white;
+}
+
+.swatch div:nth-child(1) {
+  animation: childOne 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(2) {
+  animation: childTwo 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(3) {
+  animation: childThree 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(4) {
+  animation: childFour 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(5) {
+  animation: childFive 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(6) {
+  animation: childSix 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+
+/***************************************************/
+/***********************textContent*******************/
+/***************************************************/
+.textContent{
+  text-align: center;
+}
+.textContent h3{
+  font-weight: 600;
+}
+.textContent p{
+  margin-top: 20px;
+  font-weight: 400;
+}
+.textContent button{
+  margin-top: 20px;
+  padding: 16px 60px;
+  border: 2px solid black;
+  text-align: center;
+  box-shadow : 0px 0px 6px black;
+  font-weight: bold;
+  border-radius : 4px;
+  transition: all 0.4s;
+}
+.textContent button:hover{
+  transition: all 0.4s;
+  background: rgb(30, 178, 166);
+  border: 2px solid rgb(30, 178, 166);
+  box-shadow : 0px 0px 6px 2px rgb(30, 178, 166);
+  color : white;
+}
+/*****************************************************/
+/*************************Animation*******************/
+/*****************************************************/
+@keyframes childOne {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(-65deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@keyframes childTwo {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(-40deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@keyframes childThree {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(-15deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@keyframes childFour {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(15deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@keyframes childFive {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(40deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@keyframes childSix {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: translateX(-50%) rotate(65deg);
+  }
+  90%,
+  10% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}

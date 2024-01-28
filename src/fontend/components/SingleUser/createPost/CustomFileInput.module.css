@@ -1,0 +1,33 @@
+/* FileInput.css */
+.customFileInput {
+  width: 100%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: -99;
+}
+
+label {
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  border :  1px solid #ccc;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+label:hover {
+  background-color: rgb(66, 176, 166) !important;
+  color: white;
+}

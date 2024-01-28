@@ -1,0 +1,79 @@
+:root {
+  font-size: 16px;
+}
+
+/*********************************************/
+/*************SINGLE COURSE*******************/
+/*********************************************/
+
+.containerDiv {
+  width: 100%;
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+/*********************************************/
+/***************courseDetails*****************/
+/*********************************************/
+.courseDetails {
+  position: relative;
+  padding: 3rem 0rem;
+  z-index: 1;
+}
+/* INSTRUCTOR * RELATED COURSE MANAGEMENT */
+.gropuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .gropuContainer {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+}
+
+/************* PRICE ****************/
+.price {
+  display: block;
+  padding: 10px 0rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: white;
+  background: rgb(30, 30, 30);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+.price:hover {
+  background: rgb(30, 178, 166);
+}
+
+/******** COURSE DETAILS **********/
+.classContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0rem;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/********** ENROLLMENT *************/
+.enrollmentDeadline {
+  display: block;
+  padding: 10px 0rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: rgb(30, 30, 30);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.452);
+}
+.enrollmentDeadline:hover {
+  background: rgb(30, 178, 166);
+}

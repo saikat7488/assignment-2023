@@ -1,0 +1,34 @@
+:root {
+  font-size: 16px;
+}
+
+.ContactFormDataContainer {
+  padding: 3rem;
+  height: 100%;
+}
+
+.contactCard {
+  padding: 1rem;
+  height: 100%;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dataGroup {
+  width: 100%;
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: flex;
+}
+
+.topic {
+  text-transform: uppercase;
+  min-width: 25%;
+}

@@ -1,0 +1,105 @@
+:root {
+  font-size: 16px;
+}
+
+.cardBox {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 7px;
+
+  white-space: wrap;
+  overflow: hidden;
+}
+
+.cardBox:last-child {
+  margin-bottom: 0px;
+}
+
+.cardContent {
+  width: 96%;
+  margin: 5px auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  border-radius: 4px;
+  min-height: 220px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; 
+}
+
+.cardContent:hover {
+  background: rgb(30,178,166);
+  color: white;
+}
+
+/* CARD IMAGE */
+.cardImage {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10%;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.studentName,
+.studentEmail,
+.studentUniversity {
+  font-style: italic;
+  overflow : hidden;
+  font-size : 1.2rem;
+}
+
+.studentName {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: normal;
+  transition: letter-spacing 0.4s ease-in-out;
+}
+.studentName:hover {
+  letter-spacing: 1px;
+  transition: letter-spacing 0.4s ease-in-out;
+}
+
+
+
+
+
+/* ANIMATION 01*/
+.bubbleAnimation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: bubble 0.6s ease-in-out infinite; /* Add animation */
+  visibility: hidden; /* Initially hidden */
+}
+
+.cardContent:hover .bubbleAnimation {
+  visibility: visible;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}

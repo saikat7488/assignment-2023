@@ -1,0 +1,202 @@
+:root {
+  font-size: 16px;
+}
+
+ul,
+ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  list-style: none;
+}
+
+.customContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+  position: relative;
+}
+
+.tab_container {
+  position: relative;
+  margin: 0 auto;
+  min-height: 33rem;
+}
+
+.tab_container li {
+  display: block;
+  float: left;
+  border: none !important;
+}
+
+.tab_container li input[type="radio"] {
+  display: none;
+}
+
+.tab_container li [id^="tab"] ~ .customLabel {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: black;
+  padding: 0px 10px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab_container li [id^="tab"] ~ .customLabel:hover {
+  background: rgb(30, 178, 166);
+  color: white;
+}
+
+.tab_container [id^="tab"]:checked ~ .customLabel {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  color: black;
+  background: #ddd;
+  background: linear-gradient(to bottom, #f8f8f8, #ddd);
+
+  /* z-index: 5 !important;
+  position: relative; */
+}
+
+/* .tab_container [id^="tab"]:checked ~ .customLabel::after{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+} */
+
+/* .tab_container [id^="tab"]:checked ~ .customLabel:hover {
+  background: none;
+  color: white;
+} */
+
+.tab_content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  min-height: 28rem;
+  border-top: 1px solid #ddd;
+}
+
+.tab_container [id^="tab"]:checked ~ .tab_content {
+  display: block;
+}
+
+
+/* .tab_container [id^="tab"]:checked ~ .customLabel::after{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+
+
+.tab_container::after{
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0px;
+
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: 1;
+} */
+
+/* ********************************* */
+/* MEDIA QUERY AND RESPONSIVE DESIGN */
+/* ********************************* */
+
+/* small-screen */
+@media screen and (min-width: 300px) and (max-width: 319px) {
+  .tab_container {
+    min-height: 72rem;
+  }
+  .tab_content {
+    min-height: 67rem;
+  }
+}
+/* small-screen */
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .tab_container {
+    min-height: 70rem;
+  }
+  .tab_content {
+    min-height: 65rem;
+  }
+}
+/* small-screen */
+@media screen and (min-width: 381px)  and (max-width: 393px){
+  .tab_container {
+    min-height: 66rem;
+  }
+  .tab_content {
+    min-height: 61rem;
+  }
+}
+/* small-screen */
+@media screen and (min-width: 394px)  and (max-width: 480px){
+  .tab_container {
+    min-height: 60rem;
+  }
+  .tab_content {
+    min-height: 55rem;
+  }
+}
+/* small-screen */
+@media screen and (min-width: 481px)  and (max-width: 596px){
+  .tab_container {
+    min-height: 56rem;
+  }
+  .tab_content {
+    min-height: 51rem;
+  }
+}
+
+/* small-screen */
+@media screen and (min-width: 597px)  and (max-width: 767px){
+  .tab_container {
+    min-height: 52rem;
+  }
+  .tab_content {
+    min-height: 47rem;
+  }
+}
+
+/* small-screen */ /* to */ /* medium-screen */
+@media screen and (min-width: 768px)  and (max-width: 991px){
+  .tab_container {
+    min-height: 38rem;
+  }
+  .tab_content {
+    min-height: 33rem;
+  }
+}
+
+/* medium-screen*/ /* to */ /* large-screen */
+@media screen and (min-width: 992px) and (max-width: 1024px){
+  .tab_container {
+    min-height: 33rem;
+  }
+  .tab_content {
+    min-height: 28rem;
+  }
+}
+
+/* DATE */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .date {
+    display: none !important;
+  }
+}
+
+

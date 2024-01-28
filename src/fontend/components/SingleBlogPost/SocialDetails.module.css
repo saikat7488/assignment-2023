@@ -1,0 +1,66 @@
+:root {
+  font-size: 16px;
+}
+
+.socialDetails {
+  padding: 6px 0rem;
+  background: white;
+}
+.socialDataItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialDataItems .socialDataItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socialDataItems .socialDataItem .likeData {
+  padding: 02px 0.5rem;
+}
+.socialDataItems .socialDataItem .viewData {
+  padding: 02px 0.5rem;
+}
+.socialDataItems .socialDataItem .commentData {
+  padding: 02px 0.5rem;
+}
+.socialDataItems .socialDataItem .shareData {
+  padding: 02px 0.5rem;
+}
+
+.socialDataItem > div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*  */
+.socialDataBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.250);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.250);
+  padding: 0.1rem 0rem;
+  margin-bottom: 8px;
+}
+
+.socialDataBtns .socialBtn {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.socialDataBtns .socialBtn i {
+  min-width: 40px;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}

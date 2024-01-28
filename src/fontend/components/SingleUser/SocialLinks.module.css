@@ -1,0 +1,52 @@
+:root {
+  font-size: 16px;
+}
+
+/* SOCIAL LINK CARD */
+.socialLinkContainer .socialLinkCard {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.socialLinkContainer .socialLinkCard .spcialLinkListItem {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.socialLinkContainer .socialLinkCard .spcialLinkListItem i {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  margin: 0.1rem;
+}
+.socialLinkContainer .socialLinkCard .spcialLinkListItem i:hover {
+  color: rgb(30, 176, 166);
+  transition: all 0.4s;
+  animation: animatie 0.4s;
+}
+
+.socialLinkContainer .socialLinkCard .spcialLinkListItem:hover{
+  transform: translateY(6px);
+}
+
+@keyframes animatie {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}

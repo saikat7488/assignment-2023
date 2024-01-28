@@ -1,0 +1,197 @@
+:root {
+  font-size: 16px;
+}
+
+/*****************************/
+/****** customContainer ******/
+/*****************************/
+
+.customContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+/*****************************/
+/******* customCardBox *******/
+/*****************************/
+.customCardBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.5s;
+}
+
+/*****************************/
+/********* cardBox ***********/
+/*****************************/
+.customCardBox .cardBox {
+  width: 25rem;
+  height: 500px;
+  box-shadow: 0px 3px 5px #0000007e;
+  border-radius: 10px;
+  overflow: hidden;
+
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  transition: all 0.4s linear;
+
+  margin : 0.3rem 0rem;
+}
+.customCardBox .cardBox:last-child{
+  margin-bottom: 0rem;
+}
+
+.customCardBox .cardBox:hover {
+  filter: blur(0px);
+  transform: scale(1.03);
+  opacity: 1;
+  background: rgb(30, 178, 166);
+  transition: all 0.4s;
+}
+
+.customCardBox .cardBox:hover .publicImage img {
+  border: 10px solid rgb(30, 178, 166);
+  padding: 10px;
+  transform: scale(1.4);
+  transition: all 0.8s;
+}
+
+.customCardBox .cardBox .coverImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: -2;
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0% 70%);
+  background: rgba(255, 255, 255, 0.74);
+  transition: all 0.4s;
+}
+
+.customCardBox .cardBox:hover .coverImage {
+  transition: all 0.4s;
+  background-color: rgb(30, 30, 30);
+}
+
+/* IMAGE */
+.customCardBox .cardBox .coverImage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: -2;
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0% 70%);
+  background: white;
+}
+
+.bidoSection {
+  color: white;
+  padding: 0rem 0.3rem;
+}
+
+.customCardBox .cardBox .publicImage img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 10px solid rgb(30, 30, 30);
+  object-fit: cover;
+  margin-top: -90px;
+  position: relative;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.customCardBox .cardBox .cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customCardBox .cardBox .cardContent p {
+  margin: 0px;
+  font-size: 13px;
+  padding: 0.8rem 20px;
+  color: white;
+}
+
+.customCardBox .cardBox .cardContent h4 {
+  color: #f0f0f0;
+  font-size: 20px;
+  padding: 10px 0px;
+  z-index: 50 !important;
+}
+.customCardBox .cardBox .cardContent span {
+  font-size: 15px;
+  color: #e74c3c;
+}
+.customCardBox .cardBox:hover .cardContent span {
+  color: white;
+}
+
+.customCardBox .cardBox .cardContent span i {
+  margin-right: 5px;
+}
+
+.customCardBox .cardBox .cardContent .social_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(164, 62, 51);
+  margin-top: 1rem;
+}
+
+.customCardBox .cardBox .cardContent .social_icon i {
+  width: 3rem;
+  height: 3rem;
+  background: rgb(36, 35, 35);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin: 0rem 0.2rem;
+}
+
+.customCardBox .cardBox:hover .cardContent .social_icon i:hover {
+  box-shadow: 0px 0px 8px 0px rgb(6, 73, 68);
+}
+
+.customCardBox .cardBox:hover .cardContent .social_icon i {
+  background: rgb(19, 221, 204);
+  color: white;
+}
+
+/*********************************/
+/********* Media Query ***********/
+/*********************************/
+
+@media screen and (max-width: 585px) {
+  .customCardBox .cardBox {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 586px) and (max-width: 767px) {
+  .customCardBox .cardBox {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .customCardBox .cardBox {
+    width: 20rem;
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .customCardBox .cardBox {
+    width: 20rem;
+    flex-grow: 1;
+  }
+}
+
+.loading {
+  border: 1px solid red !important;
+}

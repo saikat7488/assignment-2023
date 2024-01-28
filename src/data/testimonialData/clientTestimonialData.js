@@ -1,0 +1,58 @@
+const clientTestimonialData = [
+    {
+        id : "01",
+        type : 'Client',
+        image : "testimonial_1.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+    {
+        id : "02",
+        type : 'Client',
+        image : "testimonial_2.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+    {
+        id : "03",
+        type : 'Client',
+        image : "testimonial_3.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+    {
+        id : "04",
+        type : 'Client',
+        image : "testimonial_4.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+    {
+        id : "05",
+        type : 'Client',
+        image : "testimonial_4.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+    {
+        id : "06",
+        type : 'Client',
+        image : "testimonial_4.jpg",
+        name : "Devid Milan",
+        position : "CEO",
+        institution : "XYZ inc",
+        comment : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique. Consequatur ducimus fuga officiis itaque laboriosam est quis? Laborum, iste.",
+    },
+];
+
+export default clientTestimonialData;

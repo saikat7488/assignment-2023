@@ -1,0 +1,56 @@
+:root {
+  font-size: 16px;
+}
+
+
+/* Create Blog Post */
+.createBlog {
+  margin-top: 14px;
+}
+
+/**************************************/
+/***********BLOG MANAGEMENT************/
+/**************************************/
+.blogManagement {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 20px;
+}
+
+.blogManagement .blogListManagement {
+  width: 23rem !important;
+  align-items: flex-start;
+}
+
+.blogManagement .blogDisplay {
+  width: calc(100% - 23rem);
+  align-items: flex-start;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.blogManagement .blogDisplay .socialDetailsDisplay {
+  width: 100%;
+  margin: 0px auto;
+}
+.blogManagement .blogDisplay .createCommentDisplay {
+  width: 95%;
+  margin: 0px auto;
+}
+.blogManagement .blogDisplay .commentDisplay {
+  width: 95%;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 991px) {
+  .blogManagement {
+    flex-wrap: wrap;
+  }
+  .blogManagement .blogListManagement {
+    width: 100% !important;
+  }
+  .blogManagement .blogDisplay {
+    width: 100% !important;
+  }
+}

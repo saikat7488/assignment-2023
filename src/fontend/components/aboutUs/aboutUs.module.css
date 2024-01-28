@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0%;
+  padding: 0px;
+}
+
+
+:root {
+  --color--1: #d7d4d4;
+  --color--2: #000000;
+  --color--3: #5050;
+  --shadow--: 15px 20px 50px rgba(0, 0, 0, 0.04);
+  --background--: #000000fe;
+  --padding--: clamp(1.5rem, 5rem, 4rem);
+}
+
+
+
+/* ---------------customContainer----------- */
+.customContainer{
+  background: #f8f8f8;
+}
+
+/* --------------------About Section----------- */
+.sectionConatiner {
+  background-image: url(../../../assets/images/aboutUsBg.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 600px;
+}
+
+.about {
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: clamp(3rem, 5vw, 4rem);
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.about > * {
+  flex: 1 1 30rem;
+}
+
+.aboutCards {
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0px var(--padding--);
+}
+
+.aboutCard {
+  position: relative;
+  background-color: var(--color--1);
+  box-shadow: var(--shadow--);
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.aboutCard:nth-of-type(even) {
+  margin-left: auto;
+}
+
+.aboutCard::after {
+  position: absolute;
+  content: "1";
+  top: -30px;
+  left: -30px;
+  background: var(--background--);
+  color: var(--color--1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow--);
+}
+
+.aboutCard:nth-of-type(2)::after {
+  content: "2";
+}
+
+.aboutCard:nth-of-type(3)::after {
+  content: "3";
+}
+
+.about h2,
+.about h3 {
+  font-weight: 500px;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  padding-bottom: 1rem;
+}
+
+.about h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 130%;
+  font-weight: 500;
+}
+
+.about p + p {
+  padding-top: 1rem;
+}
+
+.about .explore {
+  display: block;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--color--2);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  max-width: max-content;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+
+.about .explore span {
+  width: 50px;
+  text-align: center;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  border: 2px solid var(--color--2);
+}
+
+.about .explore:hover span {
+  width: 100px;
+}
+
+/* --------------------About Section----------- */

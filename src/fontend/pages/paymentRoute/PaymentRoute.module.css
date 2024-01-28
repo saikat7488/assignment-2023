@@ -1,0 +1,196 @@
+:root {
+  font-size: 16px;
+}
+
+.paymentValidation {
+  position: relative;
+}
+
+.paymentContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+/* ***** */
+/* ***** */
+/* ***** */
+/* ***** */
+
+.display {
+  width: 100%;
+}
+
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+.paymentArea {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+.paymentAreaTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+.paymentCompnent {
+  padding: 1rem 0rem;
+}
+
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+.policy {
+  padding: 1rem 0rem;
+}
+
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+.policyTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+/* ***** */ /* ***** */
+
+.dataContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: uppercase;
+  padding: 1.5rem 0rem;
+}
+.mailAddress {
+  text-transform: lowercase !important;
+}
+
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */
+
+.contentDetails {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contentDetails .title {
+  width: 100%;
+  padding: 6px 0rem;
+  border-bottom: 1px solid rgb(30, 178, 166);
+  font-weight: 700;
+}
+
+/* ***** */ /* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */ /* ***** */
+/* ***** */ /* ***** */ /* ***** */ /* ***** */
+.contentDetails .dataGroup {
+  width: 95%;
+  margin: 0px 0px 0px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid rgb(30, 178, 166);
+}
+
+.contentDetails .dataGroup .label {
+  width: 100%;
+  font-weight: 500;
+}
+
+.contentDetails .dataGroup .data {
+  width: 100%;
+}
+
+/* signInButtonContainer */
+.signInButtonContainer {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 4px;
+  /* background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
+  opacity: 0.6;
+}
+
+/* SIGN IN BUTTON */
+.signInButton {
+  width: 40%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgb(30, 30, 30);
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.signInButtonContainer:hover .signInButton:hover {
+  box-shadow: 0px 0px 50px 15px black;
+}
+
+.previousCourseData {
+  width: 100%;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+}
+.previousCourseData:last-child {
+  margin-bottom: 0rem !important;
+}
+
+
+
+/* ************************************ */
+/* ********* inactive | active ******** */
+/* ************************************ */
+.inactive {
+  color: red;
+  font-weight: bolder;
+}
+.active {
+  color: green;
+  font-weight: bolder;
+}

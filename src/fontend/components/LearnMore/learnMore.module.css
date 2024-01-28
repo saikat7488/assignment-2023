@@ -1,0 +1,144 @@
+ul,
+li,
+ul li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  list-style: none;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.customContainer {
+  padding: 0rem 3rem 1rem 3rem;
+  background: #f8f8f8;
+}
+
+.listItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.listItems li {
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0.3rem 0rem;
+}
+.listItems li:last-child{
+ margin-bottom: 0rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width : 576px){
+  .listItems li{
+    display: block;
+    width: 100%;
+  }
+}
+
+.listItems li:hover {
+  background: rgb(30, 178, 166);
+  color : white;
+}
+
+.mainItems div {
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  min-height: 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  font-weight: bold;
+  /* div width */
+  width: 31%;
+  margin: 10px 1%;
+}
+
+@media screen and (max-width: 667px) {
+  .mainItems div {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 991px) {
+  .mainItems div {
+    width: 48%;
+    margin: 10px 1%;
+  }
+}
+
+.mainItems div:hover {
+  background: rgb(30, 178, 166);
+  color: white;
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+}
+
+.mainItems div span {
+  margin-left: 30px;
+  position: relative;
+  margin-bottom: 4px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+.mainItems div span:hover {
+  /* background: rgb(109, 53, 15) !important; */
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.mainItems div span::after {
+  position: absolute;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  top: 0px;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #e2e6f3;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainItems div:hover span::after {
+  border: 2px solid white;
+}
+
+.mainItems div span:hover::after {
+  border: none;
+  content: "\f058";
+  font-size: 28px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+}
+
+.active {
+  background : rgba(0, 0, 0, 0.616) !important;
+  color: white;
+}
+
+
+.mainItems div span{
+  position: relative;
+  max-width: max-content;
+}
+

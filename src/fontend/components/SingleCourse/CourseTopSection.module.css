@@ -1,0 +1,186 @@
+:root {
+  font-size: 16px;
+}
+
+/******* DESIGN CARD ************/
+.designCard {
+  padding: 3.5rem 1rem;
+  position: relative;
+  background: white;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.designCard::after {
+  position: absolute;
+  content: "COURSE INFORMATION";
+  top: -25px;
+  left: 50%;
+  padding: 0px 2rem;
+  height: 50px;
+  display: flex;
+  font-weight: bold;
+  background: white;
+  color: black;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.designCard.courseInfo::after {
+  content: "COURSE INFORMATION";
+  font-size: 1rem;
+  text-align: center;
+}
+
+.designCard.devInfo::after {
+  content: "DEVELOPMENT INFORMATION";
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*****COURSE CONTENT DISPLAY*****/
+.courseContentDisplay {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* ***************************** */
+.courseTopIcon{
+  width: 3.2rem;
+  height: 3.2rem;
+  background : rgb(216, 214, 214);
+  border-radius: 8px;
+}
+/************** iCOCN ************/
+.customSvgContainer {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: all 0.4s;
+}
+.customSvgContainer:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+
+/******** TITLE & RATING ***********/
+.titleAndRatingContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/************* TITLE ****************/
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen and (max-width : 480px){
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+/******** COURSE DESCRIPTION *********/
+.courseDescription {
+  width: 60%;
+  margin: 0px auto;
+  text-align: center;
+  white-space: pre-line;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+}
+@media screen and (max-width : 480px){
+  .courseDescription {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+/********** CERTIFICATE ***************/
+.certificationContainer {
+  width: 8rem;
+  height: 8rem;
+  margin: 0px auto;
+  position: relative;
+}
+.certificationContainer i {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 8rem;
+}
+
+.checkIcon {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 3rem !important;
+  color: white;
+}
+
+/* Certificate isLoading statge */
+.certificateLoading,
+.checkIconLoading {
+  background: linear-gradient(#cdced3, #cdced3d3) !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* ************************************ */
+/* /* *********  Hover Effect ********* */
+/* ************************************ */
+.designCard:hover {
+  background: rgb(30, 176, 166);
+  color: white;
+}
+
+.designCard:hover .customSvgContainer{
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+.designCard:hover .checkIcon {
+  color: rgb(30, 30, 30);
+}

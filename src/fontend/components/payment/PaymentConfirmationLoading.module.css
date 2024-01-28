@@ -1,0 +1,32 @@
+:root {
+  font-size: 16px;
+}
+
+.animationContainer {
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden !important;
+}
+
+.flight {
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveFlight 3s linear infinite;
+}
+
+/* flight */
+@keyframes moveFlight {
+  0%, 100% {
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(-20px); /* Adjust the distance as needed */
+  }
+}

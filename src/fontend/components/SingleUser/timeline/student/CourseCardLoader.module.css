@@ -1,0 +1,256 @@
+:root {
+  font-size: 16px;
+}
+
+.courseCard {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 30px;
+  background: #f8f8f8;
+  color: transparent !important;
+  user-select: none !important;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #cdced3, inset 0 0 0 1px #cdced3d3;
+}
+
+.courseCard:last-child {
+  margin-bottom: 0px;
+}
+
+/* courseStatus */
+.courseStatus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 06px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+/* courseTitle */
+.courseTitle {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.3rem 06px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+/* ******************************* */
+/* ******** COURSE SECTION ******* */
+/* ******************************* */
+
+.courseSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.courseInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+.courseContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 04px;
+  margin-top: 10px;
+}
+
+.classContentItem {
+  flex-grow: 1;
+  padding: 06px 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+.studentWithCourseTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 04px;
+  margin-top: 10px;
+}
+.studentWithCourseTime > div {
+  flex-grow: 1;
+  padding: 06px 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+/* ******************************* */
+/* ******** TEACHER SECTION ****** */
+/* ******************************* */
+
+.teacherSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.teacherInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+.courseInstructorDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.2rem 0rem;
+  margin-top: 10px;
+}
+
+.courseInstructorImage {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.courseInstructorImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.courseInstructorName {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 06px 0px;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+/* ******************************* */
+/* ******** STUDENT SECTION ****** */
+/* ******************************* */
+
+.studentSection {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.studentInfo {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+.examination {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.result {
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px;
+  border-radius: 4px;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+.resultTitle {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.resultData {
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.completeResult {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+.resultStatus {
+  margin-top: 10px;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  background: linear-gradient(#cdced3, #cdced3d3);
+  animation: loading 1.5s infinite;
+}
+
+/* ANIMATION */
+@keyframes loading {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

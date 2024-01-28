@@ -1,0 +1,182 @@
+/*****************************************************/
+/******************paginationContainer****************/
+/*****************************************************/
+.paginationContainer {
+  padding: 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/**********************************************************************/
+/* previousClassName | nextClassName | pageClassName | breakClassName */
+/**********************************************************************/
+.previousClassName,
+.nextClassName,
+.pageClassName,
+.breakClassName {
+  width: 4rem;
+  height: 4rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  box-shadow: 0px 0px 20px black;
+  transform: scale(1);
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  position: relative;
+
+  list-style-type: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*********************************/
+/* pageClassName| breakClassName */
+/*********************************/
+.pageClassName,
+.breakClassName {
+  width: 3rem !important;
+  height: 3rem !important;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.previousClassName:hover,
+.nextClassName:hover,
+.pageClassName:hover,
+.breakClassName:hover {
+  background: rgb(30, 178, 166);
+  box-shadow: 0px 0px 20px 5px rgb(2, 121, 109);
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+
+/**************************************************************************************/
+/* previousLinkClassName | nextLinkClassName | pageLinkClassName | breakLinkClassName */
+/**************************************************************************************/
+.previousLinkClassName,
+.nextLinkClassName,
+.pageLinkClassName,
+.breakLinkClassName {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(32,32,32);
+  transform: scale(1);
+  transition: all 0.6s ease-in-out;
+}
+
+.previousLinkClassName:hover,
+.nextLinkClassName:hover,
+.pageLinkClassName:hover,
+.breakLinkClassName:hover {
+  color: white;
+  transform: scale(1.3);
+  transition: all 0.6s ease-in-out;
+}
+
+/***************************************************/
+/* previousLinkClassName::after | nextLinkClassName::after */
+/***************************************************/
+.previousLinkClassName::after,
+.nextLinkClassName::after {
+  position: absolute;
+  content: "<";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+.nextLinkClassName::after {
+  content: ">";
+}
+
+.previousLinkClassName:hover::after,
+.nextLinkClassName:hover::after {
+  color: white;
+}
+
+/*************/
+/* activeBtn */
+/*************/
+.activeBtn {
+  background: rgb(32,32,32) !important;
+  color: white !important;
+  box-shadow: 0px 0px 20px 5px black !important;
+}
+
+.activeBtn .previousLinkClassName,
+.activeBtn .nextLinkClassName,
+.activeBtn .pageLinkClassName,
+.activeBtn .breakLinkClassName {
+  color: white !important;
+}
+
+
+
+
+@media screen and (min-width:250px) and (max-width:480px) {
+  .paginationContainer {
+    gap: 5px;
+  }
+  
+  /**********************************************************************/
+  /* previousClassName | nextClassName | pageClassName | breakClassName */
+  /**********************************************************************/
+  .previousClassName,
+  .nextClassName,
+  .pageClassName,
+  .breakClassName {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  
+  /*********************************/
+  /* pageClassName| breakClassName */
+  /*********************************/
+  .pageClassName,
+  .breakClassName {
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+
+@media screen and (min-width:481px) and (max-width:991px) {
+  .paginationContainer {
+    gap: 7px;
+  }
+  
+  /**********************************************************************/
+  /* previousClassName | nextClassName | pageClassName | breakClassName */
+  /**********************************************************************/
+  .previousClassName,
+  .nextClassName,
+  .pageClassName,
+  .breakClassName {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  /*********************************/
+  /* pageClassName| breakClassName */
+  /*********************************/
+  .pageClassName,
+  .breakClassName {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 1.2rem !important;
+  }
+}

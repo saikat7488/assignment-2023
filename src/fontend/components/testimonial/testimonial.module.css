@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+.customConatiner {
+  padding: 0rem 3rem 1rem 3rem;
+  background: #f8f8f8;
+}
+
+.testimonial .main_area {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0rem;
+}
+.testimonial .main_area .left {
+  width: 6rem;
+  overflow: hidden;
+}
+.testimonial .main_area .left img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+.testimonial .main_area .right {
+  max-width: calc(100% - 6rem);
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.562);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: relative;
+  font-weight: 500;
+  font-style: italic;
+  background: #fff;
+}
+
+.testimonial .main_area .right::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background: #fff;
+}
+
+.testimonial .main_area:hover {
+  color: white;
+}
+
+.testimonial .main_area:hover .left img {
+  border: 4px solid rgb(30, 178, 166);
+}
+.testimonial .main_area:hover .right {
+  background: rgb(30, 178, 166);
+  transition: all 0.2s ease;
+}
+.testimonial .main_area:hover .right::before {
+  background: rgb(30, 178, 166);
+  transition: all 0.2s ease;
+}
+
+.testimonial .comment {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.testimonial span.job_position {
+  font-weight: 700;
+  margin-right: 3px;
+  text-transform: uppercase;
+}
+.testimonial span.institution {
+  font-weight: 500;
+}
+
+.quoteIcon {
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .testimonial .main_area .right::before {
+    top: 30px;
+  }
+}

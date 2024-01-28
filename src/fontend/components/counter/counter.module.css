@@ -1,0 +1,67 @@
+:root {
+  font-size: 16px;
+}
+
+.layoutSetting {
+  padding-bottom: 1.8rem;
+  background: #f8f8f8;
+}
+
+.customCounter {
+  width: 100%;
+  padding: 5rem 3rem;
+  background: url("../../../assets/images/counterDesign.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: background-position 1s;
+}
+
+.customCounter:hover {
+  background-position: center 35%; /* Change the background position on hover */
+}
+
+.customCounter::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 28, 28, 0.548);
+}
+.counterBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  z-index: 5;
+}
+.counterBody .counterIcon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.counterNumber {
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}
+
+.counterCaption {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 6px black;
+}
+
+.counterUp{
+  font-size : 2rem;
+}

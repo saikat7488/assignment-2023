@@ -1,0 +1,100 @@
+.createModel{
+    position: fixed;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    min-height: 80vh;
+    max-height : 700px;
+    background: #f8f8f8;
+    border-radius: 2px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.822);
+    z-index: 999;
+}
+
+.colseModel{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.closeIcon{
+    font-size: 14px;
+    color: white;
+}
+.colseModel:hover{
+    background-color:rgb(254, 153, 1);
+    border: none;
+}
+
+.modelContainer{
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.displayContent{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainContent{
+    flex-grow: 1;
+    height: 100%;
+    background: rgb(30, 178, 166);
+}
+
+
+  /* Mobile View */
+@media screen and (min-width:320px) and (max-width:449px) {
+    .createModel{
+        width: 100%;
+    }
+    .displayContent{
+        display: none;
+    }
+}
+  /* Mobile View */
+@media screen and (min-width:450px) and (max-width:768px) {
+    .createModel{
+        width: 450px;
+    }
+    .displayContent{
+        display: none;
+    }
+}
+ /* Tablet View */
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .createModel{
+        width: 450px;
+    }
+    .displayContent{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+   .createModel{
+    width: 70%
+   }
+}

@@ -1,0 +1,30 @@
+:root {
+  font-size: 16px;
+}
+
+.courseStatusListCard {
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.courseStatusListCard:last-child {
+  margin-bottom: 0px;
+}
+
+.courseStatusListCard:hover {
+  background: rgb(66, 176, 166);
+  color: white;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+.courseStatusListCard.active:hover {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}

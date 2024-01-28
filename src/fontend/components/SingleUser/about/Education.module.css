@@ -1,0 +1,20 @@
+:root {
+  font-size: 16px;
+}
+
+.educationCard {
+  box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.5);
+  padding: 2rem 0rem;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+}
+
+.department {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.institution {
+  font-size: 1.3rem;
+  font-weight: 700;
+}

@@ -1,0 +1,38 @@
+
+.classContentDiv {
+  width: 300px;
+  flex-grow: 1;
+  padding: 1rem 0rem;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.521);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 0.2rem;
+}
+.classContentDiv:last-child{
+  margin-bottom: 0rem;
+}
+
+.classContentDiv:hover {
+  background: rgb(30, 178, 166);
+  color: white;
+}
+
+.classContentTitle {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.classContentData {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .classContentDiv {
+    width: 100%;
+  }
+}

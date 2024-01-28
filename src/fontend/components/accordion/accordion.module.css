@@ -1,0 +1,67 @@
+:root {
+  font-size: 16px;
+}
+
+.customContainer {
+  padding: 2rem 0px;
+  background: rgb(1, 4, 9);
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.accordion {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.accordion .accordion_tittle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.accordion li {
+  list-style-type: none;
+  list-style: none;
+  border-bottom: 1px solid white;
+  margin: 20px;
+  padding: 10px;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.accordion li label::before {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+/* Technology */
+.accordion li .content {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: rgb(91, 94, 101);
+  padding-left: 40px;
+  padding-top: 10px;
+  /* Techonlolgy */
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.accordion li input[type="radio"] {
+  display: none;
+}
+
+.accordion li input[type="radio"]:checked ~ .content {
+  display: block;
+  max-height: 400px;
+}
+.accordion li input[type="radio"]:checked ~ label::before {
+  content: "-";
+}

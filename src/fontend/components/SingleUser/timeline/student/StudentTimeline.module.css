@@ -1,0 +1,38 @@
+:root {
+  font-size: 16px;
+}
+
+/**************************************/
+/***********BLOG MANAGEMENT************/
+/**************************************/
+.studentTimelineManagement {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 20px;
+}
+
+.studentTimelineManagement .studentCourseStatusList {
+  width: 23rem !important;
+  align-items: flex-start;
+}
+
+.studentTimelineManagement .studentCourseListDisplay {
+  width: calc(100% - 23rem);
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 6px;
+  /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5); */
+  padding: 0.1rem 0.2rem 0rem 0.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .studentTimelineManagement {
+    flex-wrap: wrap;
+  }
+  .studentTimelineManagement .studentCourseStatusList {
+    width: 100% !important;
+  }
+  .studentTimelineManagement .studentCourseListDisplay {
+    width: 100% !important;
+  }
+}

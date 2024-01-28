@@ -1,0 +1,119 @@
+:root {
+  font-size: 16px;
+  --icon-fill-color--: rgb(0, 0, 0);
+  --isActiveMouseEnter-- : rgb(255, 255, 255);
+}
+
+/* START RATING CONTAINER CARD */
+.star_rating {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap : 2px;
+}
+
+/* START CARD*/
+.star {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.full_star {
+  background-image: url("../../../assets/images/star/fullStarLogo.svg");
+}
+.half_star {
+  background-image: url("../../../assets/images/star/halfStarLogo.svg");
+}
+.empty_star {
+  background-image: url("../../../assets/images/star/emptyLogo.svg");
+}
+
+
+
+/************************************/
+/***********Hover Effect*************/
+/********Depend On ParentDiv*********/
+/************************************/
+
+.star_rating.isActiveMouseEnter .full_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--isActiveMouseEnter--);
+  mask: url("../../../assets/images/star/fullStarLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+.star_rating.isActiveMouseEnter .half_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--isActiveMouseEnter--);
+  mask: url("../../../assets/images/star/halfStarLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+.star_rating.isActiveMouseEnter .empty_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--isActiveMouseEnter--);
+  mask: url("../../../assets/images/star/emptyLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+
+
+
+/************************************/
+/***********Hover Effect*************/
+/************************************/
+
+.star_rating:hover .full_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-fill-color--);
+  mask: url("../../../assets/images/star/fullStarLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+.star_rating:hover .half_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-fill-color--);
+  mask: url("../../../assets/images/star/halfStarLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+.star_rating:hover .empty_star::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-fill-color--);
+  mask: url("../../../assets/images/star/emptyLogo.svg") no-repeat center
+    center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}

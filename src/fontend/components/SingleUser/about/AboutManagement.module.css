@@ -1,0 +1,43 @@
+:root {
+  font-size: 16px;
+}
+
+/* **************** */
+/* About Management */
+/* **************** */
+.aboutManagement {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 20px;
+}
+
+/* ****************** */
+/* leftSideManagement */
+/* ****************** */
+.leftSideManagement {
+  width: 23rem !important;
+  /* box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.2); */
+}
+
+/* ******************* */
+/* rightSideManagement */
+/* ******************* */
+.rightSideManagement {
+  width: calc(100% - 23rem);
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #f8f8f8;
+}
+
+@media screen and (max-width: 991px) {
+  .aboutManagement {
+    flex-wrap: wrap;
+  }
+  .aboutManagement .leftSideManagement {
+    width: 100% !important;
+  }
+  .aboutManagement .rightSideManagement {
+    width: 100% !important;
+  }
+}

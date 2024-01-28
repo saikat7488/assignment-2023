@@ -1,0 +1,73 @@
+:root {
+  font-size: 16px;
+  --color-30-176-166: rgb(30, 176, 166);
+}
+
+/* Custom Container */
+.customContainer {
+  padding: 1rem 3rem 1.5rem 3rem;
+  background : #f8f8f8;
+}
+
+/* Item */
+.customContainer .featureItem {
+  margin-bottom: 2rem;
+  background: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.customContainer .featureItem:last-child {
+  margin-bottom: 0px;
+}
+.customContainer .featureItem {
+  padding: 1rem;
+}
+.customContainer .featureItem h4 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.customContainer .featureItem p {
+  margin: 0px;
+}
+.customContainer .featureItem:hover {
+  border-radius: 6px;
+  background-color: var(--color-30-176-166);
+  color: white;
+  transition:   background-color 0.4s ease;
+}
+
+/* Iamge */
+.imageConatiner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.imageConatiner .imagePosition {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+.imageConatiner .imagePosition img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+
+/* Image Control media Quries */
+@media screen and (max-width: 991px) {  
+  .imageConatiner{
+    width: 60%;
+    margin: 0px auto;
+    height: 300px !important;
+  }
+  .imageConatiner .imagePosition img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: fill;
+  }
+}

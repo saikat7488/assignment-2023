@@ -1,0 +1,133 @@
+:root {
+  font-size: 16px;
+}
+
+.customContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+.customContainer .cardContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.customContainer .cardContainer .card {
+  width: 240px;
+  min-height: 140px;
+  flex-grow: 1;
+  padding: 30px;
+  border: 1px solid rgb(0, 0, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.customContainer .cardContainer .card:hover {
+  color: rgb(30, 178, 166);
+  border: 1px solid rgb(30, 178, 166);
+}
+.customContainer .cardContainer .card .name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.customContainer .cardContainer .card .title {
+  text-align: center;
+}
+
+/****************************************************/
+/****************Pagination Styles*******************/
+/****************************************************/
+.paginationContainer {
+  padding: 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.paginationContainer .paginationItem,
+.paginationContainer .prevBtn,
+.paginationContainer .nextBtn {
+  width: 5rem;
+  height: 5rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0px 0px 20px black;
+  transform: scale(1);
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.paginationContainer .paginationItem {
+  width: 3rem !important;
+  height: 3rem !important;
+  font-size: 1.5rem !important;
+}
+
+.paginationContainer .paginationItem span,
+.paginationContainer .prevBtn span,
+.paginationContainer .nextBtn span {
+  font-size: 2rem;
+  transform: scale(1);
+  transition: all 0.6s ease-in-out;
+}
+
+/* paginationItem -> span */
+.paginationContainer .paginationItem span {
+  font-size: 1.5rem !important;
+}
+
+
+/* PrevBtn -> #Div | paginationItem -> #div | NextBtn -> #Div */
+.paginationContainer .paginationItem:hover,
+.paginationContainer .prevBtn:hover,
+.paginationContainer .nextBtn:hover {
+  background: rgb(30, 178, 166);
+  box-shadow: 0px 0px 20px 5px rgb(2, 121, 109);
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+
+/* PrevBtn -> span | paginationItem -> span | NextBtn -> span */
+.paginationContainer .paginationItem:hover span,
+.paginationContainer .prevBtn:hover span,
+.paginationContainer .nextBtn:hover span {
+  color: white;
+  transform: scale(1.4);
+  transition: all 0.6s ease-in-out;
+}
+
+/* Active Button */
+.activeBtn {
+  background: black !important;
+  color: white !important;
+}
+.activeBtn:hover {
+  background: black !important;
+  color: white !important;
+  box-shadow: 0px 0px 20px 5px black !important;
+}
+
+
+/* Disable Button */
+.disableBtn {
+  background: black;
+  color: white;
+}
+.disableBtn:hover {
+  background: black !important;
+  color: white !important;
+  box-shadow: 0px 0px 20px 5px black !important;
+}

@@ -1,0 +1,197 @@
+:root{
+  font-size : 16px;
+}
+
+/*********************************************/
+/*************COURSE INSTRUCTOR***************/
+/*********************************************/
+.courseInstructor {
+  flex-grow: 1;
+  min-height: 400px;
+  width: 46%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  padding: 2.5rem 1rem;
+  position: relative;
+  background: white;
+  border-radius : 8px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+
+}
+/* *********************** */
+@media screen and (max-width: 991px) {
+ .courseInstructor{
+    width: 100% ; 
+    min-height: auto;
+  }
+}
+/* *********************** */
+
+
+.courseInstructor::after {
+  position: absolute;
+  content: "COURSE INSTRUCTOR";
+  top: -25px;
+  left: 50%;
+  padding: 0px 2rem;
+  height: 50px;
+  display: flex;
+  font-weight: bold;
+  background: white;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.courseInstructorConatiner {
+  width : 96%;
+  border-radius: 6px;
+  padding: 4rem 1.5rem;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.courseInstructorConatiner:hover {
+  background: rgb(31, 178, 166);
+  color: white;
+}
+
+.instructor {
+  padding: 04px 0rem;
+  font-size : 1rem;
+}
+
+.courseInstructor .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0rem;
+  font-size : 1rem;
+}
+
+.courseInstructor .profileImage {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.courseInstructor .profileImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.courseInstructor .profileImage:hover {
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.courseInstructor .profileImage:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+
+
+.profileInfo {
+  min-width: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  font-size : 1rem;
+}
+
+.courseInstructor .profileName {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-size : 1rem;
+}
+.courseInstructor .profileName:hover {
+  text-shadow: 0px 0px 2px black;
+}
+
+.courseInstructor .department,
+.courseInstructor .university {
+  font-weight: 500;
+  font-size : 1rem;
+}
+
+/* SOCIAL LINK */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  list-style: none;
+}
+
+.socialLinks li {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgb(2, 2, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: translateY(0px);
+  transition: all 0.4s;
+  margin: 0rem 0.2rem;
+}
+
+.courseInstructorConatiner:hover .socialLinks li {
+  border: 1px solid white;
+}
+
+.socialLinks li i {
+  font-size: 1.4rem;
+  transform: scale(1);
+  transition: all 0.4s;
+  font-weight: 600;
+}
+
+@media screen and (max-width : 480px){
+  .socialLinks li i {
+    font-size: 1rem;
+  }
+}
+
+.socialLinks li:hover {
+  transform: translateY(-5px);
+  transition: all 0.4s;
+}
+
+.socialLinks li:hover i {
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+
+
+/* @media screen and (max-width: 1024px) {
+  .courseInstructor .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileImage {
+    margin-bottom: 10px;
+  }
+} */

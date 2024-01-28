@@ -1,0 +1,116 @@
+:root {
+  font-size: 16px;
+}
+
+.customContainer {
+  padding: 0rem 3rem;
+  background: #f8f8f8;
+}
+
+.textContent {
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.textContent p {
+  margin: 0px;
+  padding: 0px;
+}
+.textContent h2 {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.processContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0rem;
+}
+
+/****************************************/
+/***********Process Card*****************/
+/****************************************/
+.process {
+  padding: 1rem;
+  flex-grow: 1;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0.4rem 0rem;
+}
+.process:last-child{
+  margin-bottom: 0rem;
+}
+
+
+.process:hover {
+  box-shadow: 0px 0px 2px 2px rgb(16, 199, 212);
+  color : rgb(30, 178, 166);
+}
+
+.process:hover .number {
+  background-position: -120px;
+  transition: all 0.3s ease;
+  background-color : rgb(0, 247, 255);
+  color: white !important;
+}
+
+
+.number {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  align-self: flex-start;
+  width: 80px;
+  height: 80px;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    90deg,
+    #6b6868 0%,
+    #dad0d0 40%,
+    rgba(0, 0, 0, 0.28) 60%
+  );
+  border-radius: 100%;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.tagLists {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.tagList {
+  position: relative;
+  padding: 0.2rem 0rem;
+}
+.tagList  i{
+  font-size: 1.5rem;
+  margin-right: 10px;
+}

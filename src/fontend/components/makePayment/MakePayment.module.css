@@ -1,0 +1,41 @@
+/* MakePayment.css */
+
+.paymentContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paymentContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentContainer label {
+  margin-bottom: 8px;
+}
+
+.paymentContainer input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.paymentContainer button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.paymentContainer button:hover {
+  background-color: #45a049;
+}

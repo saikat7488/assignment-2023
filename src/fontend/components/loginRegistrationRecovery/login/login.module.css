@@ -1,0 +1,264 @@
+* {
+  font-size: 16px;
+}
+
+/* Login Section */
+.login_section {
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  max-height: 700px;
+  overflow: hidden;
+  color: white;
+  background: rgb(30, 178, 166);
+  padding: 10px 20px;
+}
+
+/* Login Section  Top Icon*/
+.top_icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin-top: 0.5rem;
+}
+.top_icon i {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* Login Section >> Title Text*/
+.title_text {
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Login Section >> input_box*/
+.input_box {
+  width: 100%;
+  height: 40px;
+  border: 2px solid white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.inputFildSection {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .inputFildSection {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 0px 60px 0px 20px;
+}
+
+.input_box label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: calc(100% - 20px);
+  transform: translateY(-50%);
+  font-weight: 600;
+  pointer-events: none;
+  font-size: 12px;
+  color: white;
+  background: transparent;
+
+  border: 1px solid transparent;
+}
+.input_box input:focus ~ label,
+.input_box input:valid ~ label {
+  display: block;
+  position: absolute;
+  padding: 2px 20px;
+  left: 10px;
+  top: -2px;
+  background: rgb(30, 178, 166);
+  border-radius: 6px;
+  border: 1px solid white;
+}
+
+.input_box .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* Remember_password */
+.remember_signInPassword {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember_signInPassword .checkbox_control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.remember_signInPassword input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  line-height: 40px !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20%;
+  cursor: pointer;
+  outline: none;
+  margin-right: 6px;
+  font-weight: 900;
+}
+.remember_signInPassword input[type="checkbox"]:checked {
+  background: transparent;
+  border: 2px solid white;
+}
+.remember_signInPassword input[type="checkbox"]:checked::before {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  content: "\f058";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  transform: translateY(-50%);
+  color: rgb(30, 178, 166);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Section >> signin_btn*/
+.signin_btn {
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin: 16px auto 5px auto;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(254, 153, 1);
+  transition: all 0.4s ease;
+}
+
+.signin_btn:hover {
+  box-shadow: 0px 0px 10px white;
+}
+
+/* Login Section >> create_account*/
+.create_account {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.create_account span {
+  margin-left: 6px;
+}
+
+/* Link Management */
+.login_section span {
+  text-decoration: none;
+  color: white;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.login_section span:hover {
+  text-decoration: underline !important;
+  opacity: 1;
+}
+
+/*************************/
+/******Lock/Unlock********/
+/*************************/
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: none;
+  font-size: 6px;
+  cursor: pointer;
+}
+
+.input_box input:focus ~ .eyeIcon,
+.input_box input:valid ~ .eyeIcon {
+  display: block;
+}
+
+.input_box input:focus ~ .icon_disable,
+.input_box input:valid ~ .icon_disable {
+  display: none;
+}
+
+/****************/
+/* Hover Effect */
+/****************/
+.login_section:hover {
+  background-color: rgb(30, 178, 166);
+}
+
+.login_section:hover .input_box input:focus ~ label,
+.login_section:hover .input_box input:valid ~ label {
+  background: rgb(30, 178, 166);
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 0px 60px 0px 20px;
+}
+
+.suggestionSelected {
+  background-color: transparent !important;
+}

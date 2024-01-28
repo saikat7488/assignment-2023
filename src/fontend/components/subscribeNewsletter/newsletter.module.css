@@ -1,0 +1,52 @@
+:root {
+  font-size: 16px;
+}
+.customConatiner {
+  min-height: 400px;
+  padding: 0px 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(27, 13, 55);
+  text-align: center;
+  transition: all 0.4s;
+}
+.customConatiner:hover{
+  background :rgb(30, 178, 166);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.titleText {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.formDesign input[type="text"] {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.formDesign button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: brown;
+
+  color: white;
+}
+.formDesign button:hover{
+  background: brown !important;
+}
+.customConatiner:hover .formDesign button{
+  background: rgb(13, 236, 207);
+}

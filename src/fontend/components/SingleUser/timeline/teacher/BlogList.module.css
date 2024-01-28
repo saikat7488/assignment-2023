@@ -1,0 +1,67 @@
+:root {
+  font-size: 16px;
+}
+
+.blogContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.blogCard {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0.6rem;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #fff;
+  min-height: 160px;
+}
+
+.blogCard:last-child {
+  margin-bottom: 0px;
+}
+
+.blogTitle {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/***********************************/
+/**************HOVER****************/
+/***********************************/
+.blogCard:hover {
+  color: white;
+  background: rgb(30, 176, 166);
+}
+
+.active {
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.active:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/***********************************/
+/***********MEDIA QUARY*************/
+/***********************************/
+@media screen and (max-width: 991px) {
+  .blogContainer {
+    width: 100% !important;
+    flex-direction: row;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+
+  .blogCard {
+    flex-grow: 1;
+  }
+}

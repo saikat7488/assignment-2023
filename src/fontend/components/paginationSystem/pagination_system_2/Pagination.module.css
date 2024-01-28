@@ -1,0 +1,46 @@
+:root {
+  font-size: 16px;
+}
+.customContainer {
+  padding: 2rem 3rem;
+  background: #f8f8f8;
+}
+
+/*****************************************************/
+/********************cardContainer********************/
+/*****************************************************/
+.customContainer .cardContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.customContainer .cardContainer .card {
+  width: 240px;
+  min-height: 140px;
+  flex-grow: 1;
+  padding: 30px;
+  border: 1px solid rgb(0, 0, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.customContainer .cardContainer .card:hover {
+  color: rgb(30, 178, 166);
+  border: 1px solid rgb(30, 178, 166);
+}
+.customContainer .cardContainer .card .name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.customContainer .cardContainer .card .title {
+  text-align: center;
+}
+

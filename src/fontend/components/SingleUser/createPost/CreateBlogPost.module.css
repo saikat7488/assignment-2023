@@ -1,0 +1,124 @@
+:root {
+  font-size: 16px;
+}
+
+.createBlogPost {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 1rem;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.titlePosition {
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlePosition.fullView {
+  width: 100%;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  background: white;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.circle1 {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+}
+.circle2 {
+  width: 4rem;
+  height: 4rem;
+}
+.circle3 {
+  width: 3rem;
+  height: 3rem;
+}
+.circle4 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.titlePosition:hover .circle {
+  background: rgb(66, 176, 166);
+  color: rgb(255, 255, 255);
+}
+
+.postPosition {
+  display: none !important;
+  width: calc(100% - 23.66rem) !important;
+}
+
+.postPosition.activeContent {
+  display: block !important;
+}
+
+.cardBox {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  padding: 1rem;
+  border-radius: 4px;
+  background: #f8f8f8;
+}
+
+.cardBoxTitle {
+  padding: 8px 10px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #ffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.titleFile {
+  border: 1px solid #ccc !important;
+}
+.titleFile:focus {
+  border: 1px solid #ccc !important;
+  box-shadow: none;
+}
+
+.customBtn {
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.customBtn:hover {
+  background: rgb(66, 176, 166);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 991px) {
+  .createBlogPost {
+    flex-wrap: wrap;
+  }
+  .createBlogPost .titlePosition {
+    width: 100% !important;
+  }
+  .createBlogPost .postPosition {
+    width: 100% !important;
+  }
+}

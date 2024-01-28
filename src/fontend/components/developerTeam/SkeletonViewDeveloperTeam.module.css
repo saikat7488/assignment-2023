@@ -1,0 +1,143 @@
+:root {
+  --primaryColor: rgb(7, 7, 7);
+  --secondaryColor: white;
+  --tertiaryColor: rgb(41, 43, 44);
+  --highlightColor: rgb(50, 44, 44);
+  --borderColor: rgb(9, 33, 57);
+}
+
+/* CardSection Header*/
+.cardDesign {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px !important;
+  border: 2px solid rgb(235, 235, 235);
+  background: #ffffff;
+}
+
+/* CardSection Header*/
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeaderImage {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0px auto !important;
+  overflow: hidden;
+}
+
+.cardHeaderInformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardHeaderFirstText {
+  margin-top: 10px !important;
+  height: 18px;
+}
+.cardHeaderSecondText {
+  margin-bottom: 10px !important;
+  height: 12px;
+}
+
+.cardHeaderContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6px;
+  margin-bottom: 10px !important;
+}
+
+.cardHeaderContent > * {
+  flex: 1;
+}
+.cardHeaderContentLeft {
+  width: 112px;
+}
+.cardHeaderContentCenter {
+  width: 165px;
+}
+
+/* CardSection Body*/
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBodyInformation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardBodyInformation > * {
+  padding: 2px !important;
+  flex: 1;
+  margin: 0px 10px !important;
+}
+
+.cardBodyTextLastLine {
+  display: block;
+  width: 70%;
+  margin: 0px auto !important;
+}
+
+.cardSocialMedia {
+  display: block;
+  width: 220px;
+  margin: 0px auto !important;
+}
+
+.cardSocialMedia ul {
+  display: flex;
+  width: 220px;
+  margin: 0px auto;
+  flex-direction: row;
+}
+
+.cardSocialMedia ul > * {
+  flex: 1;
+}
+
+.cardAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.cardAction > * {
+  flex: 1;
+  padding: 6px 10px !important;
+}
+
+/* CardSection Footer*/
+.cardFooter {
+  background-color: rgb(30,30,30);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cardFooterHeading {
+  width: 70px;
+  margin: 10px auto !important;
+  color: var(--secondaryColor);
+}
+
+.cardFooter ul.cardfooterItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardfooterItems li {
+  padding: 4px 8px !important;
+  border-radius: 4px;
+}
