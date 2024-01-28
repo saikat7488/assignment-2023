@@ -1,3 +1,7 @@
+# Version 0.1.0 ---- This is a simple react project without express server.
+# Version 0.2.0 ---- 
+# Version 0.3.0 ----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
